@@ -1,5 +1,5 @@
 // ╔══════════════════════════════════════════════════╗
-// ║          🥷 ITACHI-v3.0 - index.js          ║
+// ║          🥷 IB-HEX-BOT v3.0 - index.js          ║
 // ║      Développé par : ibrahima sory sacko         ║
 // ║              Guinée 🇬🇳 — 2025                   ║
 // ╚══════════════════════════════════════════════════╝
@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>🥷 IB-HEX-BOT</title>
+<title>🥷 ITACHI-MD</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',sans-serif;background:#0d1117;color:#fff;
@@ -70,7 +70,7 @@ padding:5px 12px;font-size:.78rem;color:#8b949e}
 </head>
 <body>
 <div class="card">
-  <h1>🥷 IB-HEX-BOT</h1>
+  <h1>🥷 ITACHI-MD</h1>
   <p class="sub">Bot WhatsApp par <strong>ibrahima sory sacko</strong> 🇬🇳</p>
   <div class="cats">
     <span class="cat">🤖 Général</span>
@@ -82,7 +82,7 @@ padding:5px 12px;font-size:.78rem;color:#8b949e}
   ${connected
     ? `<div class="badge ok">✅ Bot Connecté et Actif!</div>
        <p style="color:#25D366;font-size:1.1rem;margin:10px 0">🎉 Votre bot fonctionne!</p>
-       <p style="color:#8b949e">Envoyez <strong style="color:#fff">Ibmenu</strong> sur WhatsApp</p>`
+       <p style="color:#8b949e">Envoyez <strong style="color:#fff">Imenu</strong> sur WhatsApp</p>`
     : qrData
     ? `<div class="badge wait">📱 Scannez le QR Code</div>
        <div id="qrimg"><img src="${qrData}" alt="QR"/></div>
@@ -97,14 +97,14 @@ padding:5px 12px;font-size:.78rem;color:#8b949e}
     : `<div class="badge load">⏳ Génération du QR...</div>
        <p style="color:#8b949e;margin:18px 0">Patientez quelques secondes...</p>
        <button onclick="location.reload()">🔄 Actualiser</button>`}
-  <p class="footer">IB-HEX-BOT v3.0 • Préfixe <strong>Ib</strong></p>
+  <p class="footer">ITACHI-MD v3.0 • Préfixe <strong>I</strong></p>
 </div>
 ${!connected ? "<script>setTimeout(()=>location.reload(),5000)</script>" : ""}
 </body></html>`);
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🥷 IB-HEX-BOT v3.0 démarré!`);
+  console.log(`\n🥷 ITACHI-MD v3.0 démarré!`);
   console.log(`🌐 Page QR: http://localhost:${PORT}\n`);
 });
 
@@ -112,10 +112,10 @@ app.listen(PORT, () => {
 //  ⚙️ CONFIGURATION
 // ════════════════════════════════════════════════════
 const OWNER    = "224621963059";
-const PREFIX   = "Ib";
-const BOT_NAME = "IB_HEX_BOT";
+const PREFIX   = "I";
+const BOT_NAME = "ITACHI-MD";
 const DEV_NAME = "ibrahima sory sacko";
-const MENU_IMG = "https://i.ibb.co/S4Bq8FGC/file-0000000019fc722f9717382cd6600e56.png";
+const MENU_IMG = "https://i.ibb.co/zTpCpsDD/54c381553462489288313ec73a0bbfe8.jpg";
 let   startTime = Date.now();
 
 // Anti-spam & protection stockage
@@ -329,7 +329,7 @@ async function startBot() {
       connected = true;
       qrData    = null;
       startTime = Date.now();
-      console.log("✅ IB-HEX-BOT v3.0 connecté avec succès!");
+      console.log("✅ ITACHI-MD v3.0 connecté avec succès!");
     }
   });
 
@@ -421,16 +421,16 @@ async function startBot() {
     // ════════════════════════════════════════════════
 
     if (cmd === "menu") {
-      const menu = `╭──𝗜𝗕-𝗛𝗘𝗫-𝗕𝗢𝗧─────🥷
+      const menu = `╭──𝗜𝗧𝗔𝗖𝗛𝗜-𝗠𝗗─────🥷
 │ 🤖 *${BOT_NAME}* v3.0
 │ ⏱️ Uptime: *${getUptime()}*
 │ 🛡️ Préfixe: *${PREFIX}*
 │ 👑 Owner: *IbSacko*
 ╰──────────────🥷
 
-🤖─────────────────🤖
+🥷─────────────────🥷
    🥷𝗜𝗕𝗥𝗔𝗛𝗜𝗠𝗔 𝗦𝗢𝗡𝗬 𝗦𝗔𝗖𝗞𝗢🥷
-🤖─────────────────🤖
+🥷─────────────────🥷
 
 🥷───────────────🥷
 『 🤖 𝗚É𝗡É𝗥𝗔𝗟 』
@@ -526,7 +526,7 @@ async function startBot() {
 │ ⬡ ${PREFIX}attp [texte] → Texte → Sticker
 ╰────────────────🥷
 
-_🤖 ${BOT_NAME} v3.0 | centralhex_`;
+_🥷 ${BOT_NAME} v3.0 | 5 categories_`;
 
       await sendImg(sock, from, MENU_IMG, menu);
     }
