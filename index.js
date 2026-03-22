@@ -526,10 +526,9 @@ async function startBot() {
 │ ⬡ ${PREFIX}attp [texte] → Texte → Sticker
 ╰────────────────🥷
 
-_🤖 ${BOT_NAME} v3.0 | System Central Hex;
+_🤖 ${BOT_NAME} v3.0 | System Central Hex_`;
 
-      await sendImg(sock, from, MENU_IMG, menu);
-    }
+await sendImg(sock, from, MENU_IMG, menu);
 
     else if (cmd === "alive") {
       await sendImg(sock, from, MENU_IMG,
