@@ -1,0 +1,18 @@
+{
+  "name": "ib-hex-bot",
+  "version": "3.0.0",
+  "description": "IB-HEX-BOT WhatsApp par ibrahima sory sacko",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3",
+    "pino": "^8.15.0",
+    "axios": "^1.6.0",
+    "sharp": "^0.32.6",
+    "jimp": "^0.22.10"
+  }
+}
