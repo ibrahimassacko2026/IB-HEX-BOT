@@ -330,6 +330,19 @@ async function startBot() {
       qrData    = null;
       startTime = Date.now();
       console.log("✅ ITACHI-MD v3.0 connecté avec succès!");
+      try {
+        await sock.sendMessage(OWNER + "@s.whatsapp.net", {
+          image: { url: "https://i.ibb.co/zTpCpsDD/54c381553462489288313ec73a0bbfe8.jpg" },
+          caption: "🥷 *ITACHI-MD connecté avec succès!*\n\n" +
+            "✅ Bot actif et prêt!\n" +
+            "🛡️ Préfixe: *I*\n" +
+            "📜 Tapez *Imenu* pour voir les commandes\n" +
+            "⏱️ Démarré à: *" + new Date().toLocaleTimeString("fr-FR", { timeZone: "Africa/Conakry" }) + "*\n\n" +
+            "🔥 *ITACHI-MD est en ligne!* 🥷"
+        });
+      } catch(e) {
+        console.log("Notification owner impossible: " + e.message);
+      }
     }
   });
 
